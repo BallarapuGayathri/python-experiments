@@ -1,0 +1,77 @@
+1.ARITHMETIC OPERATORS
+a=10
+b=2
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+2.ARITHMETIC USING INPUT FUNCTION
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+3.COMPARISON OPERATORS
+a=10;
+b=20;
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
+
+4.SWAPPING OF TWO NUMBERS
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+temp=a
+a=b
+b=temp
+print("after swapping of two numbers are:")
+print("___________")
+print("first value is:",a)
+print("second value is:",b)
+
+5.TO FIND AREA OF TRIANGLE
+a=float(input("enter first number:"))
+b=float(input("enter second number:"))
+c=float(input("enter third number:"))
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c))**0.5
+print(area)
+
+6.AREA AND PERIMETER OF RECTANGLE
+a=float(input("enter length:"))
+a=float(input("enter breadth:"))
+area=a*b
+print(area)
+perimeter=2*(a+b)
+print(perimeter)
+
+7.RADIUS OF THE CIRCLE
+a=float(input("enter the diameter:"))
+radius=d/2
+print(radius)
+
+8.AUTHORISED USER OR NOT
+
+authorised_user=['admin','user1','user8']
+
+user_name=input("enter your name:")
+if user_name in authorised_user:
+
+    print(f"welcome,{user_name}!you are authorised.")
+
+else:
+   
+    print(f"access denied!{user_name}is not an authorised user")
+
+
+

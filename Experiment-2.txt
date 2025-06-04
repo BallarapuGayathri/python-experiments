@@ -1,0 +1,126 @@
+1.TO CREATE A NUMBER  AND VOTE IS ELIGIBLE OR NOT
+ 
+n=eval(input("enter the age:"))
+
+if n>=18:
+   
+   print("you are eligible to vote")
+
+else:
+   
+    print("you are not eligible to vote")
+
+2.CHECK THE NUMBER IS EVEN OR ODD
+
+num=int(input("enter a number:"))
+
+if num%2==0:
+ 
+   print(num,"is even")
+
+else:
+
+    print(num,"is odd")
+
+3.TO ACCEPT A NUMBER TO PRINT RESPECTIVE WORD
+n=eval(input("enter the number:"))
+
+if n==0:
+ 
+  print("zero")
+
+elif n==1:
+ 
+  print("one")
+
+elif n==2:
+ 
+  print("two")
+
+elif n==3:
+ 
+  print("three")
+
+elif n==4:
+ 
+  print("four")
+
+else:
+  
+  print("the number is out of range")
+
+4.TO ACCEPT A NUMBER B/W 1 TO 100
+
+x=int(input("enter a number:"))
+
+if x>=1 and x<=100:
+   
+        print("The given number is within the range")
+
+else:
+    
+            print("The given number is not within the range")  
+ 
+IF ELIF ELSE STATEMENT
+
+5.TO ACCEPT 3 NUMBERS AND FIND BIGGEST NUMBER
+
+num1 = float(input("Enter first number: "))
+
+num2 = float(input("Enter second number: "))
+
+num3 = float(input("Enter third number: "))
+
+if (num1 >= num2) and (num1 >= num3):
+  
+           print("The first number is biggest")
+
+elif (num2 >= num1) and (num2 >= num3):
+
+               print("The second number is biggest")
+
+else:
+ 
+              print("The third number is biggest")
+
+6.TO DISPLAY THE NUMBERS DIVISIBLE BY 5
+
+N=int(input("enter the value of N:"))
+
+count=0
+
+num=5
+
+while count<N:
+
+    print(num)
+
+    num+=5
+
+    count+=1
+
+7.TO PRINT THE NUMBRS 1 TO 10 SKIPPING 5 AND BREAKING AT 8
+
+for i in range(1,11):
+
+    if i==5:
+
+        continue
+
+    if i==8:
+
+        break
+
+    print(i)
+
+8.TO PRINT EVEN NUMBERS B/W 0 TO 20 BY USING WHILE LOOP
+
+i=0
+
+while i<=20:
+
+    if  i%2==0:
+
+        print(i,end=",")
+
+    i+=1

@@ -1,0 +1,126 @@
+1.TO FIND GCD OF TWO NUMBERS USING FUNCTION
+
+def gcd(a,b):
+ 
+ while b!=0:
+   
+      a,b=b,a%b
+
+  return a
+
+num1=int(input("Enter the first number:"))
+
+num2=int(input("Enter the second number:"))
+
+result=gcd(num1,num2)
+
+print("The GCD of",num1,"and",num2,"is",result)
+
+2.TO FIND THE NUMBERS EVEN OR ODD BY USING FUNCTION
+
+def check_even_odd(number):
+
+    if number%2==0:
+  	
+        return "even"
+                
+        return "odd"
+
+num=int(input("Enter a number:"))
+
+result=check_even_odd(num)
+
+print("the number is:",result)
+
+3.TO FIND THE FACTORIAL VALUE 1 TO 10 USING FUNCTION 
+
+def factorial(n):
+  
+  if n==0:
+    
+       return 1
+
+  else:
+   
+       return n*factorial(n-1)
+
+for i in range(1,11):
+    
+  result=factorial(i)
+
+print("Factorial of",i,"is",result)
+
+4.TO FIND THE FACTORIAL VALUE OF A GIVEN NUMBER USING FUNCTION
+def factorial(n):
+
+   if n==0:
+   
+        return 1
+ 
+   else:
+   
+        return n*factorial(n-1)
+
+num=int(input("Enter a number:"))
+
+result=factorial (num)
+
+print("the factorial of",num,"is",result)
+
+5.TO FIND SUM OF A LIST USING FUNCTION
+  
+def calculate_sum(numbers):
+ 
+total=0
+
+for num in numbers:
+
+ total+=num
+ 
+return total
+
+list=[]
+
+n=int(input("enter the number of elements in the list:"))
+
+for i in range(n):
+  
+num=eval(input("Enter element {}:".format(i+1)))
+
+list.append(num)
+
+result=calculate_sum(list)
+
+print("the sum of the list is",result)
+    
+
+6.TO PERFORM ARITHMETIC OPERATIONS USING FUNCTIONS
+
+def add(x,y):
+   
+     return x+y
+
+def subtract(x,y):
+
+     return x-y
+
+def multiply(x,y):
+ 
+     return x*y
+
+def divide(x,y):
+  
+  return x/y
+
+num1=float(input("enter the first number:"))
+
+num2=float(input("enter the second number:"))
+
+print("Addition:",add(num1,num2))
+
+print("Subtraction:",subtract(num1,num2))
+
+print ("Multiplication:",multiply(num1,num2))
+
+print("Division:",divide(num1,num2))
+

@@ -1,0 +1,118 @@
+1.TO ACCEPT A LIST AND PRINT THE LIST ELEMENTS AND FIND SUM
+
+list=eval(input("Enter some list elements:"))
+
+sum=0
+
+for x in list:
+    
+sum=sum+x
+    
+       print("The sum value:",sum)
+
+2.LIST FUNCTIONS
+
+l=[10,20.30,40,True,78243]
+
+print(len(l))
+
+print(l)
+
+print(max(l))
+
+print(min(l))
+
+3.TO CHECK EMPTY LIST AND STORE ELEMENTS
+
+mylist=[]
+
+n=int(input("enter any number:"))
+
+for x in range(n):
+  
+  num=int(input("enter a number:"))
+  
+  mylist.append(num)
+    
+  print("my updated list is:",mylist)
+
+4.TO ACCESS AND REMOVE THE ELEMENT
+
+l=[10,20,30,"rani",(10+20j),True]
+
+print(l[3])
+
+print(l[-2])
+
+print(l[1:4])
+
+print(l)
+
+l.remove(30)
+
+print(l)
+
+5.TO FIND SUM OF ELEMENTS IN A LIST
+mylist=[8,2,3,0,7]
+
+sum=0
+
+for i in mylist:
+ 
+   sum=sum+i
+
+    print("the sum is:",sum)
+
+6.TO ACCEPT A STRING AND CONVERTED INTO A LIST
+ s=input("Enter a string:")
+ print(s.split())
+
+7.TO PRINT THE LIST WITHOUT ODD NUMBERS
+
+n=int(input("Enter the value:"))
+
+mylist=[]
+
+for i in range(n):
+ 
+x=int(input("enter a number:"))
+
+mylist.append(x)
+
+print("Even numbers are")
+
+print("[",end=" ")
+
+for x in mylist:
+
+ if x%2==0:
+  
+print(x,end="")
+  
+print(x)
+
+8.TO REMOVE THE ELEMENTS,REVERSE THE LIST,COPY THE LISTINTO ANOTHER LIST  
+
+list=[10,20,30,"rani",True,(30+15j),False,10]
+
+print(list)
+
+x=list.copy()
+
+print(x)
+
+list.pop(3)
+
+print(list)
+
+list.remove(10)
+
+print(list)
+
+list.reverse()
+
+print(list)
+
+list.clear()
+
+print(list)
