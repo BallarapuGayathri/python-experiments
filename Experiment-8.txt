@@ -1,0 +1,59 @@
+1.TO FIND RANDOM NUMBER B/W 1 to 10
+import random
+
+random_number=random.randint(1,10)
+print("Random number:",random_number)
+
+2.TO FIND DATE AND CURRENT TIME
+import datetime
+
+current_datetime=datetime.datetime.now()
+
+print("current date and time:",current_datetime )
+
+3.TO FIND THE SQUARE NUMBER
+import math
+
+number=225
+
+sqrt=math.sqrt(number)
+
+print("Square root:",sqrt)
+
+4.TO FIND THE FACTORIAL VALUE
+import math
+
+factorial=math.factorial(4)
+
+print("Factorial:",factorial)
+
+5.TO CREATE A FILE AND WRITE SOME CONTENT,READ THE FILE
+file_path="example.txt"
+with open(file_path,"w") as file:
+file_write("Hello World!")
+with open(file_path,"r") as file:
+content=file.read()
+print("file content",content)
+
+6.TO CONVERT LOWER TO UPPER CASE
+import string
+
+text="hello,world!"
+
+Uppercase_text=text_Upper()
+
+print("Uppercase_text:",Uppercase_text)
+
+7.TO GENERATE RANDOM NUMBER B/W 1 to 10
+import secrets
+random_number=secrets.randbelow(10)+1
+print("cryptographically secure random number:",random_number)
+
+8.TO IMPLEMENT PLATFORM MODULE
+import platform
+system_name=platform.system()
+node_name=platform.node()
+processor_name=platform.processor()
+print("system name:",system_name)
+print("node name:",node_name)
+print("processor name:",prosessor_name)

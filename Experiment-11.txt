@@ -1,0 +1,62 @@
+1.TO MERGE THE TWO DICTIONARIES
+d1={10:"python",20:"java"}
+d2={30:"c",40:"ruby"}
+d3=d1|d2
+print(d3)
+print(type(d3))
+
+2.TO PERFORM ITERATION USING DICTIONARY
+d={'apple':4,'banana':6,'kiwi':8}
+
+for k in d.keys():
+
+    print(k)
+
+for v in d.values():
+
+    print(v)
+
+for k,v in d.items():
+
+    print(k,"--->",k)
+
+3.TO CONVERT SET TNTO DICTIONARY TYPE
+fruits={'mango','apple','strawberry'}
+
+fruits_dict={fruit:index for index,fruit in enumerate(fruits)}
+
+print(fruits_dict)
+
+4.TO DELETE MULTIPLE ELEMENTS IN A DICTIONARY
+d={'apple':3,'banana':7,'mango':22}
+
+kd=['apple','mango']
+
+for k in kd:
+
+   if k in d:
+
+    del d[k]
+
+print(d)
+
+5.TO PERFORM ARITHMETIC OPERATIONS ON THE VALUES OF A DICTIONARY
+d1={'sub1':87,'sub2':90,'sub3':78}
+
+print(d1)
+
+s=sum(d1.values())
+
+print(s)
+
+mx=max(d1.values())
+
+print(mx)
+
+mn=min(d1.values())
+
+print(mn)
+
+cnt=len(d1.values())
+
+print(cnt)

@@ -1,0 +1,104 @@
+TO FIND FIBONACCI SERIES OF NUMBERS
+
+def fibonacci(number):
+
+    if(number==0):
+ 
+       return 0
+
+    elif number==1:
+
+        return 1
+
+    else:
+
+        return fibonacci(number-2)+fibonacci(number-1)
+ 
+   number=int(input("Please enter the fibonacci number range="))
+
+sum=0
+
+for num in range(number):
+
+     print(fibonacci(num),end='')
+ 
+    sum=sum+fibonacci(num)
+  
+   print("\n The sum of fibonacci series numbers=%d",%sum)
+
+TO FIND FACTORIAL VALUE OF GIVEN NUMBER
+def factorial(n):
+
+   if(n==0):
+
+       return 0
+
+   if n==1:
+
+       return 1
+
+   else:
+
+        return n*factorial(n-1)
+
+   n=int(input(" enter any number="))
+  
+ print(''factorial value of',n,'is':',factorial(n))
+
+THE GIVEN STRING IS PALINDROME OR NOT
+
+def pal(s):
+
+  s=s.lower()
+
+  if len(s)<=1:
+
+    return True
+
+  elif s[0]!=s[-1]:
+
+    return False
+
+  else:
+
+    return pal(s[1:-1])
+
+myinput=input("Enter a string:")
+
+if pal(myinput):
+
+     print(f"'{myinput}'is a palindrome")
+
+else:
+
+     print(f"'{myinput}'is not a palindrome.") 
+
+TO gcd OF TWO NUMBERS USING RECUERSIVE FUNCTION
+
+def gcd(a,b):
+
+  if b==0:
+ 
+     return a
+
+  else:
+ 
+     return gcd(b,a%b)
+
+x=input(" enter any first number=")
+
+y=input(" enter any second number=")
+
+if x.isdigit() and y.isdigit():
+
+    a=int(x)
+ 
+    b=int(y)
+
+    result=gcd(a,b)
+
+     print(f"The gcd of {a} and {b} is:",result)
+
+else:
+
+   print("please enter the valid integers")

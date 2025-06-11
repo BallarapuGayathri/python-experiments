@@ -1,0 +1,50 @@
+1. TO READ AND DISPLAY THE FILE CONTENT
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+print("file object is opened")
+print(f)
+data=f.read()
+print(data)
+
+2.TO WRITE SOME CONTENT TO A FILE
+file_path="output.txt"
+with open(file_path,"w")as file:
+   file.write("Hello,world!\n)
+   file.writ("This is a sample text.")
+print("content written to",file_path)
+
+3.TO FIND NO OF CHARACTERS IN A FILE
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+data=f.read()
+print("total available characters in a given file is:",len(data))
+
+4.TO FIND THE NO OF WORDS PRESENT IN A FILE
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+data=f.read()
+lw=data.split()
+print("total number of words in a given files is:",len(lw))
+print("Available words are:",lw)
+
+5.TO DISPLAY THE EVERY WORD COUNT FROM GIIVEN FILE
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+data=f.read()
+lw=data.split()
+d={}
+for word in lw:
+    if word not in d:
+         d[word]=1
+    else:
+          d[word]=d[word]+1
+print(d)
+
+6.TO PRFORM TELL() OPERATION
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+print("the fileponter is at byte:",f.tell())
+content=f.read();
+print("After reading,the file pointer is at:",f.tell())
+
+7.TO PERFORM SEEK() OPERATION
+f=open("c:\\users\\MIC lab\\desktop\\.txt","r")
+print("the fileponter is at byte:",f.tell())
+f.seek(10);
+print("After reading,the file pointer is at:",f.tell())
+

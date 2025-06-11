@@ -1,0 +1,73 @@
+1.PROGRAM FOR DIVISION ZERO ERROR
+try:
+     x=10/0
+
+except Exception as e:
+
+    print("an error occured:",str(e))
+
+2.TO HANDLE THE MULTIPLE EXCEPTIONS
+try:
+
+   num=int(input("Enter a number:"))
+
+   result=10/num
+
+   print("Resut:",result)
+
+except valueError:
+
+    print("Error:invalid input!please enter a valid number:")
+
+except zerodivisionError:
+
+    print("Error:division by zero!")
+
+3.TO HANDLE MULTIPLE EXCEPTIONS USING ELSE  CLAUSE
+try:
+
+   num=int(input("Enter a number:"))
+ 
+   result=10/num
+
+except valueError:
+
+    print("Error:invalid input!please enter a valid number:")
+
+except zerodivisionError:
+
+    print("Error:division by zero!")
+
+else:
+
+    print("result:",result)
+
+4.TO PERFORM EXCEPTIONS WITH FINAL BLOCK
+try:
+
+    file=open("myfile.txt","r")
+
+except IOerror:
+
+    print("ERROR:unable to read th file!")
+
+finally:
+
+    file.close()
+
+5.TO FIND OUT GIVEN NUMBER IS RANGE OR NOT
+try:
+
+    x=int(input("enter a number upto 100:"))
+
+    if x>100:
+
+        raise  ValueError(x)
+
+except ValueError:
+
+    print(x,"is out of allowed range")
+
+else:
+ 
+       print(x,"is within the allowed range")
